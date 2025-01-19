@@ -1,0 +1,12 @@
+from tkinter import *
+root=Tk()
+root.geometry("600x600")
+l1=Label(root,text="First name").grid(row=0)
+l2=Label(root,text="Last name").grid(row=1,column=0)
+e1=Entry()
+e1.grid(row=0,column=1)
+e2=Entry()
+e2.grid(row=1,column=1)
+b1=Button(root,text="close",command=root.destroy)
+b1.grid(row=2)
+root.mainloop()
